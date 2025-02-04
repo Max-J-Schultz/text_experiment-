@@ -16,14 +16,12 @@ type: jsPsychHtmlKeyboardResponse,
 stimulus: 'This text is example data we want to save.<br>Press any key
 to try to save it to OSF.'
 };
-const save_data_trial = {
+const save_data = {
 type: jsPsychPipe,
 action: "save",
-experiment_id: "2bxtpiZw8Kwg", // REPLACE WITH YOUR ID!
-filename: "test_data.csv",
-data_string: ()=>jsPsych.data.get().csv(),
-on_finish: function(data){alert(data.result.message)}
-};
+experiment_id: "n7pKs5dO9jF3",
+filename: filename,
+data_string: ()=>jsPsych.data.get().csv()};
 const end_trial = {
 type: jsPsychHtmlKeyboardResponse,
 stimulus: 'Nothing left to do here.'
